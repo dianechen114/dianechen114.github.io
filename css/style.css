@@ -1,0 +1,497 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Mobile Display - General Body Styles */
+@media screen and (min-width: 320px){
+
+  html {
+    font-size: 10px;
+  }
+  body {
+    color: #747474;
+    font-family: Oxygen, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+
+    /* PROJECT1 */
+    line-height: 1.8rem;
+  }
+  .container-background {
+    background-color: white;
+    height: 80vh;
+    margin: 0 auto;
+  }
+  .container {
+    margin: 0 auto;
+    width: 84%;
+  }
+
+
+  /* Header - Logo and Naviation Menu */
+  header {
+    margin-top: 5rem;
+    height: 3.65rem
+  }
+  #logo img, #logo {
+    align-items: center;
+    display: inline-flex;
+    width: 3rem;
+  }
+  nav {
+    display: inline-flex;
+    float: right;
+  }
+  ul#navMenu {
+    display: inline-flex;
+  }
+  #navMenu li {
+    display: inline-flex;
+    list-style-type: none;
+    text-decoration: none;
+    width: 7.5rem;
+    padding: 1rem 0;
+  }
+  #navMenu a {
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+
+    /* unvisited link */
+    #navMenu a:link {
+      color: #000000;
+      font-weight: 300;
+    }
+
+    /* mouse over link */
+    #navMenu a:hover {
+      color: #66B6A7;
+    }
+
+    /* selected link */
+    #navMenu a:active {
+      color: #66B6A7;
+    }
+
+
+  /* TEXT STYLES */
+
+      /* HOME PAGE & ABOUT - Short Bio */
+      h1 {
+        color: #000000;
+        font-family: Lora;
+        font-weight: bold;
+        font-size: 2.6rem;
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+      }
+      h2 {
+        color: #747474;
+        font-size: 1.6rem;
+      }
+      .bottom-text {
+        margin-top: 1rem;
+      }
+
+      /* PROJECT 1 - Intro */
+      p.summary {
+        color: #747474;
+      }
+
+      /* HOME PAGE - Main Projects Section */
+      p, h4, h5 {
+        margin-top: 1.5rem;
+      }
+      h4 {
+        color: #66B6A7;
+        font-size: 2.4rem;
+        font-weight: bold;
+      }
+      h5 {
+        color: #B66675;
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+
+      /* PROJECT 1 - Case Study Section */
+      h3 {
+        color: #66B6A7;
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-bottom: 1.5rem;
+      }
+      .strong {
+        font-weight: 600;
+      }
+
+  /* IMAGE STYLES */
+  img {
+    width: 100%;
+  }
+
+  /* HOME PAGE - Main Projects Section */
+  section.left, section.right {
+    display: inline-block;
+  }
+
+  /* ABOUT ME */
+  .image {
+      margin-top: 2rem;
+  }
+
+
+  /* PROJECT 1 - CASE STUDY SECTION */
+        section {
+          margin-top: 2.5rem;
+        }
+
+        /* Roles, Deliverables, Tools */
+        li.three-col-header {
+          color: #66B6A7;
+          font-weight: 600;
+          font-size: 2rem;
+          padding: 1.5rem 0;
+        }
+        .roles ul {
+          padding-bottom: 1.5rem;
+        }
+        li {
+          list-style-type: none;
+        }
+
+        /* Research */
+        .data {
+          display: flex;
+          justify-content: space-between;
+        }
+        .col {
+          width: 28%;
+        }
+        .percentage {
+          color: #B66675;
+          font-size: 2.2rem;
+          font-weight: 500;
+          padding: 2rem 0;
+        }
+
+        /* Competitive Analysis */
+        .competitor-logo {
+          display: flex;
+        }
+        .competitor-logo img {
+          width: 33%;
+          margin-top: 2rem;
+        }
+
+        /* User Stories & Flow */
+        .stories ul {
+          padding: 3% 0;
+        }
+        .stories li {
+          color: #B66675;
+          font-weight: 550;
+          margin-top: .5rem;
+        }
+
+        /* Persona & Wireframes & User Testing Iterations & Branding & Final Design */
+        .persona img, .wireframes img, .testing img, img.full, .final img .testing p {
+          width: 100%;
+          margin-top: 2rem;
+        }
+
+        /* Preference Test */
+        .preference {
+          width: 100%;
+        }
+        img.third {
+          margin-top: 2rem;
+        }
+
+  /* Footer */
+  footer {
+    background-color: #2E2E2E;
+    margin-top: 4rem;
+  }
+  .footer-container {
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 84%;
+  }
+  .footer-text h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+  }
+  .footer-text p {
+    font-weight: 300;
+    color: #FFFFFF;
+  }
+  .footer-text a {
+    text-decoration: none;
+    color: #66B6A7;
+  }
+  .contact a {
+    color: #FFFFFF;
+    margin: 3rem;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 758px){
+
+  .container {
+    margin: 0 auto;
+    width: 84%;
+  }
+  h1 {
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+  }
+  p.summary {
+    line-height: 1.8rem;
+    width: 20rem;
+  }
+  .intro {
+    display: inline-block;
+  }
+  .intro-left {
+    display: inline-block;
+    float: left;
+    padding: 2.5rem 0;
+    width: 35%;
+  }
+  img.hero {
+    display: inline-block;
+    float: right;
+    width: 65%;
+  }
+  .roles {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col1, .col2, .col3 {
+    width: 28%;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+
+
+
+/* Desktop */
+@media screen and (min-width: 1025px){
+
+  .container {
+    margin: 0 auto;
+    width: 86%;
+  }
+  .wrapper, .footer-container {
+    margin: 0 auto;
+    width: 98rem;
+  }
+
+  /* Header & Nav */
+    header {
+      height: 5rem;
+    }
+    #logo img, #logo {
+      width: 4rem;
+    }
+    #navMenu {
+      width: 44.5rem;
+    }
+    #navMenu li {
+      display: inline-block;
+      list-style-type: none;
+      text-decoration: none;
+      margin-left: 7rem;
+      padding: 1.6rem 0;
+    }
+    #navMenu a {
+      text-decoration: none;
+      font-size: 1.8rem;
+    }
+
+  /* Bio Starting Point */
+    .bio {
+      margin-top: 10.5rem;
+    }
+
+  /* Text Styles */
+
+    h1.greeting {
+      font-size: 3.4rem;
+      margin-bottom: 2.5rem;
+      margin-top: 4.5rem;
+    }
+    h2 {
+      color: #747474;
+      font-size: 2.4rem;
+    }
+    h2.top-text, h2.bottom-text {
+      margin-top: 2rem;
+    }
+    h2.bottom-text {
+      margin-bottom: 4.5rem;
+    }
+    h4 {
+      color: #66B6A7;
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding-bottom: 1.5rem;
+    }
+
+      /* PROJECT 1 */
+      h3 {
+        padding-bottom: 2rem;
+      }
+      h1.hive {
+        font-size: 4.8rem;
+        margin-bottom: 2rem;
+        margin-top: 5rem;
+      }
+      p.summary {
+        line-height: 2.4rem;
+        width: 27rem;
+      }
+      section {
+        margin-top: 4rem;
+      }
+
+      /* HOME PAGE */
+      p, h4, h5 {
+        margin-top: 1.5rem;
+      }
+      h4 {
+        color: #66B6A7;
+        font-size: 2.4rem;
+        font-weight: bold;
+      }
+      h5 {
+        color: #B66675;
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+
+      /* ABOUT */
+      .left-about p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        text-indent: 4rem;
+      }
+
+  /* Custom Grid Styles */
+
+    /* ABOUT PAGE */
+      .about {
+        display: inline-block;
+        margin-top: 3rem;
+        width: 100%;
+      }
+      .left-about {
+          float: left;
+          width: 43%;
+        }
+      .right-about {
+          float: right;
+          width: 43%;
+          overflow: hidden;
+          height: 52.5rem;
+        }
+      .image {
+        margin-top: 1.5rem;
+      }
+
+    /* HOME PAGE */
+      .projects {
+        display: inline-block;
+        margin-top: 2rem;
+      }
+      .left-projects {
+          float: left;
+          width: 40rem;
+        }
+      .right-projects {
+          float: right;
+          width: 40rem;
+        }
+
+    /* PROJECT 1 */
+      .intro {
+        display: inline-block;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+      }
+      .intro-left {
+        display: inline-block;
+        float: left;
+        padding: 15% 0% 10% 2%;
+        width: 35%;
+        height: 38.74rem;
+      }
+      img.hero {
+        display: inline-block;
+        float: right;
+        width: 65%;
+      }
+      .roles {
+        display: flex;
+        justify-content: space-between;
+      }
+      .col1, .col2, .col3 {
+        width: 28%;
+      }
+      .two-col {
+        display: inline-block;
+        margin-top: 2rem;
+      }
+      img.left, .left {
+        float: left;
+        margin-right: 2%;
+        width: 46%;
+      }
+      img.right, .right {
+        float: right;
+        margin-left: 2%;
+        width: 46%;
+      }
+      .competitor-logo {
+        padding: 0 25%;
+      }
+      .wireframe-wrapper {
+        display: inline-block;
+      }
+      .wireframe, img.wireframe {
+        margin-top: 5rem;
+      }
+      .testing-top, .testing-bottom {
+        display: inline-block;
+      }
+      .testing-bottom {
+        margin-top: 2rem;
+      }
+
+  /* FOOTER */
+    footer p {
+      width: 100%;
+    }
+    .footer-container {
+      margin-top: 12rem;
+      padding-bottom: 2rem;
+      padding-top: 4rem;
+    }
+    .contact a {
+      color: #FFFFFF;
+      margin: 4rem;
+    }
+  }

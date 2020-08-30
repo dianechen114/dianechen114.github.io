@@ -74,7 +74,6 @@
       color: #66B6A7;
     }
 
-
   /* TEXT STYLES */
 
       /* HOME PAGE & ABOUT - Short Bio */
@@ -135,6 +134,46 @@
     display: inline-block;
   }
 
+  .left-projects, .right-projects {
+    position: relative;
+  }
+
+  .thumbnail {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .left-projects:hover .thumbnail, .right-projects:hover .thumbnail {
+    opacity: 0.3;
+  }
+
+  .left-projects:hover .middle, .right-projects:hover .middle {
+    opacity: 1;
+  }
+
+  .hover-text a {
+  background-color: #747474;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
   /* ABOUT ME */
   .image {
       margin-top: 2rem;
@@ -143,7 +182,7 @@
 
   /* PROJECT 1 - CASE STUDY SECTION */
         section {
-          margin-top: 2.5rem;
+          margin-top: 6rem;
         }
 
         /* Roles, Deliverables, Tools */
@@ -177,13 +216,16 @@
 
         /* Competitive Analysis */
         .competitor-logo {
-          display: flex;
+          display: inline-flex;
         }
         .competitor-logo img {
           width: 33%;
           margin-top: 2rem;
         }
-
+        .competitor-logo-2 img {
+          width: 48%;
+          margin-top: 2rem;
+        }
         /* User Stories & Flow */
         .stories ul {
           padding: 3% 0;
@@ -338,10 +380,11 @@
       color: #747474;
       font-size: 2.4rem;
     }
-    h2.top-text, h2.bottom-text {
-      margin-top: 2rem;
+    h2.top-text {
+      margin-top: 3rem;
     }
     h2.bottom-text {
+      margin-top: 1.5rem;
       margin-bottom: 4.5rem;
     }
     h4 {
@@ -355,7 +398,7 @@
       h3 {
         padding-bottom: 2rem;
       }
-      h1.hive {
+      h1.intro-heading {
         font-size: 4.8rem;
         margin-bottom: 2rem;
         margin-top: 5rem;
@@ -365,7 +408,7 @@
         width: 27rem;
       }
       section {
-        margin-top: 4rem;
+        margin-top: 10rem;
       }
 
       /* HOME PAGE */
@@ -415,27 +458,27 @@
     /* HOME PAGE */
       .projects {
         display: inline-block;
-        margin-top: 2rem;
       }
       .left-projects {
           float: left;
-          width: 40rem;
+          width: 45%;
+          margin-top: 8rem;
         }
       .right-projects {
           float: right;
-          width: 40rem;
+          width: 45%;
+          margin-top: 8rem;
         }
 
     /* PROJECT 1 */
       .intro {
         display: inline-block;
-        margin-top: 5rem;
-        margin-bottom: 4rem;
+        margin-top: 12rem;
       }
       .intro-left {
         display: inline-block;
         float: left;
-        padding: 15% 0% 10% 2%;
+        padding: 13% 0;
         width: 35%;
         height: 38.74rem;
       }

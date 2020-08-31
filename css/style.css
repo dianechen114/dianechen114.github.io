@@ -389,6 +389,7 @@
   .wrapper, .footer-container {
     margin: 0 auto;
     width: 98rem;
+    padding: 0 5%;
   }
 
   /* Header & Nav */

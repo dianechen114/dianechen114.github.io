@@ -59,15 +59,16 @@
   }
 
     /* unvisited link */
-    #navMenu a:link {
+    #navMenu a:link,
+
+    /* visited link */
+    #navMenu a:visited  {
       color: #000000;
       font-weight: 300;
     }
 
     /* mouse over link */
-    #navMenu a:hover {
-      color: #66B6A7;
-    }
+    #navMenu a:hover,
 
     /* selected link */
     #navMenu a:active {

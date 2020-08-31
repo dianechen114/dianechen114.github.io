@@ -74,6 +74,11 @@
       color: #66B6A7;
     }
 
+    /* visited link */
+    #navMenu a:visited {
+      color: #000000;
+    }
+
   /* TEXT STYLES */
 
       /* HOME PAGE & ABOUT - Short Bio */
@@ -174,6 +179,15 @@
   text-decoration: none;
 }
 
+  .hover-text-coming {
+    background-color: #747474;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-style: italic;
+}
+
   /* ABOUT ME */
   .image {
       margin-top: 2rem;
@@ -183,6 +197,35 @@
   /* PROJECT 1 - CASE STUDY SECTION */
         section {
           margin-top: 6rem;
+        }
+
+      /* Button Styles */
+        .button,
+        /* unvisited link */
+        .button:link,
+        /* selected link */
+        .button:active,
+        /* visited link */
+        .button:visited {
+          background-color: #FFFFFF;
+          border: .2rem solid #66B6A7;
+          color: #66B6A7;
+          padding: 1rem 2rem;
+          text-align: center;
+          text-decoration: none;
+          display: flex;
+          font-size: 1.6rem;
+          cursor: pointer;
+          border-radius: 1rem;
+          width: 15.03rem;
+          margin: 2rem auto;
+          vertical-align: middle;
+        }
+        /* mouse over link */
+        .button:hover {
+          background-color: #66B6A7;
+          border: .2rem solid #66B6A7;;
+          color: white;
         }
 
         /* Roles, Deliverables, Tools */
@@ -287,7 +330,7 @@
 
 
 /* Tablet */
-@media screen and (min-width: 758px){
+@media screen and (min-width: 768px){
 
   .container {
     margin: 0 auto;
@@ -295,11 +338,12 @@
   }
   h1 {
     font-size: 3.4rem;
-    margin-bottom: 3rem;
+    margin: 2rem 0;
   }
   p.summary {
     line-height: 1.8rem;
     width: 20rem;
+    margin: 2rem 0;
   }
   .intro {
     display: inline-block;
@@ -326,6 +370,15 @@
     width: 100%;
     padding: 0 5%;
   }
+  /* Button Styles */
+    .button,
+    /* unvisited link */
+    .button:link,
+    /* selected link */
+    .button:active,
+    /* visited link */
+    .button:visited {
+      margin: .4rem .2rem;
 }
 
 
@@ -400,12 +453,12 @@
       }
       h1.intro-heading {
         font-size: 4.8rem;
-        margin-bottom: 2rem;
-        margin-top: 5rem;
+        margin: 3rem 0;
       }
       p.summary {
         line-height: 2.4rem;
         width: 27rem;
+        margin: 3rem 0;
       }
       section {
         margin-top: 10rem;
@@ -478,7 +531,7 @@
       .intro-left {
         display: inline-block;
         float: left;
-        padding: 13% 0;
+        padding: 4rem 0;
         width: 35%;
         height: 38.74rem;
       }

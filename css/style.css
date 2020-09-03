@@ -363,9 +363,14 @@
     width: 28%;
   }
   .wrapper {
+    margin: 0 auto;
     width: 100%;
-    padding: 0 5%;
   }
+  .footer-container {
+    width: 84%
+    padding: 2rem 5%;
+  }
+
   /* Button Styles */
     .button,
     /* unvisited link */
